@@ -1,5 +1,5 @@
 import React from 'react'
-import PromotionCard from './Components/Promotion/Card/Card';
+import PromotionCard from 'components/Promotion/Card/Card';
 function App() {
   const promotion={
     "id": 1,
