@@ -29,11 +29,18 @@
       "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem_url/9c4b176eb52bb4877e853cf36393d8fc.jpg"
     },
     {
-      "title": "Mesa Para Escritório Secretária Kappesberg LI003 136cm Freijó/Preto",
+      "title": "Mesa Para Escritório Secretária Kappesberg LI003 136cm Freijó/Pre",
       "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem/c939f837d558df19d92f78576d8c92b9.jpg",
       "url": "https://tidd.ly/3hxeMgF",
-      "price": "500.00",
+      "price": 500,
       "id": 5
+    },
+    {
+      "title": "Fone de Ouvido Jaybird Run XT Sport Bluetooth",
+      "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem/c939f837d558df19d92f78576d8c92b9.jpg",
+      "url": "https://tidd.ly/3wG5cfF",
+      "price": "5",
+      "id": 6
     }
   ],
   "comments": [
