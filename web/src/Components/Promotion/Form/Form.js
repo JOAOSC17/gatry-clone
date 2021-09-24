@@ -32,7 +32,7 @@ const PromotionForm = ({id}) => {
         load();
         }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[])
+    },[id])
     console.log(values);
     function onChange(ev){
         const {name, value} = ev.target;
@@ -54,19 +54,19 @@ const PromotionForm = ({id}) => {
                 <form onSubmit={onSubmit}>
                 {saveInfo.loading && <span>Salvando dados...</span>}
                 <div className="promotion-form__group">
-                    <label htmlfor="title">Título</label>
+                    <label htmlFor="title">Título</label>
                     <input id="title" name="title" type="text" onChange={onChange} value={values.title}/>
                 </div>
                 <div className="promotion-form__group">
-                    <label htmlfor="url">Link</label>
+                    <label htmlFor="url">Link</label>
                     <input id="url" name="url" type="text" onChange={onChange} value={values.url}/>
                 </div>
                 <div className="promotion-form__group">
-                    <label htmlfor="imageUrl">Imagem(URL)</label>
+                    <label htmlFor="imageUrl">Imagem(URL)</label>
                     <input id="imageUrl" name="imageUrl" type="text" onChange={onChange} value={values.imageUrl}/>
                 </div>
                 <div className="promotion-form__group">
-                    <label htmlfor="price">Preço</label>
+                    <label htmlFor="price">Preço</label>
                     <input id="price" name="price" type="number" onChange={onChange} value={values.price}/>
                 </div>
                 <div>
