@@ -1,3 +1,4 @@
+import UIButton from 'components/UI/Button/Button';
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './Card.css'
@@ -13,8 +14,14 @@ const PromotionCard = ({promotion, onClickComments}) => {
                         <div className="promotion-card__comment">"{promotion.comments[0].comment}"</div>
                     )}
                     <button onClick={onClickComments} className="promotion-card__comments-count">{promotion.comments.length} {' '} {promotion.comments.length > 1 ? 'Comentários' : 'Comentário'}</button>
-                    <a href={promotion.url} rel="noreferrer" target="_blank" className="promotion-card__link">Ir Para o Site</a>
-                    <Link to={`/edit/${promotion.id}`} className="promotion-card__edit-button">Editar</Link>
+                    <UIButton href={promotion.url} rel="noreferrer" target="_blank" component="a">Ir Para o Site</UIButton>
+                    <UIButton
+          component={Link}
+          to={`/edit/${promotion.id}`}
+          className="promotion-card__edit-button"
+        >
+          Editar
+        </UIButton>
                 </footer>
             </div>
         </div>
