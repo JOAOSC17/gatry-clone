@@ -9,7 +9,7 @@ const baseParams = {
     _embed: 'comments',
     _order: 'desc',
     _sort: 'id',
-    _limit: 1,
+    _limit: 5,
   };
   
 const PromotionSearch = () => {
@@ -63,7 +63,11 @@ const PromotionSearch = () => {
                 type="search" 
                 className="promotion-search__input"
                 placeholder="Buscar..." value={search} onChange={(ev)=> setSearch(ev.target.value)}/>
-            <PromotionList promotions={loadInfo.data} error={loadInfo.error} loading={loadInfo.loading}/>
+            <PromotionList promotions={loadInfo.data} error={loadInfo.error} loading={loadInfo.loading} refetch={() => {
+          load({
+            params: baseParams,
+          });
+        }}/>
             {loadInfo.data && !loadInfo.loading && loadInfo.data?.length < loadInfo.total && (
                 <UIInfiniteScroll fetchMore={fetchMore}/>
             )}

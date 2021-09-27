@@ -5,6 +5,7 @@
     display: flex;
     align-items: flex-start;
     padding: 15px;
+    position: relative;
 }
 .promotion-card__image{
     max-width: 100px;
@@ -58,3 +59,11 @@
     padding: 8px 10px;
     margin-left: 10px;
 }
+.promotion-card__delete-button {
+    border: unset;
+    background-color: unset;
+    font-size: 18px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
